@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <style>
+    body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd27WD73Db4EVws2l7__3VBaoCrYLhHwt34g&s);
+        background-size: cover;
+        font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .editable-section {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid hsl(324, 26%, 4%);
+    }
+
+    .editing {
+      border: 2px solid #0f0000;
+      background-color: #2e0523;
+    }
+
+    
+    button[type="submit"] {
+        background-color: #310225;
+        color: #30041f;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    save.button {
+      background-color: #621448;
+      color: #610347;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+    background-color: #760e5c;
+}
+  </style>
+</head>
+<body>
+
+  <section id="education" class="editable-section" contenteditable="true">
+    <h2>Education</h2>
+    <li>Matriculation in xyz school</li>
+    <li>Intermidiate in xyz college</li>
+    <li>The study is not complete yet .....</li>
+    <ul>
+        <h3>Short Courses</h3>
+        <li>Digital Marketer</li>
+        <li>Freelancer</li>
+        <li>Web Development</li>
+    </ul>
+   <ul>
+    <h4> Current Course </h4>
+    <li><p> Governer Sindh Initiative for <br> Artificial Intelligence,Web 3.0 & Metaverse</p></li>
+
+   </ul>
+  </section>
+
+  <section id="work-experience" class="editable-section" contenteditable="true">
+    <h2>Work Experience</h2>
+    <p>Not yet.....</p>
+  </section>
+
+  <section id="skills" class="editable-section" contenteditable="true">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Canva</li>
+      
+    </ul>
+  </section>
+
+  <button class="save" id="save-btn">Save Changes</button>
+
+  <script src="indexscript.js"></script>
+</body>
+</html>
